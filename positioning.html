@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relative positioning</title>
+        <style type="text/css">
+            p {font-size: 1.3em; font-family: verdana, arial, sans-serif;}
+            span {color: red; font-size: .6em; height: 1em;}
+            .super {position: relative; top: -1ex;}
+            .sub {position: relative; bottom: -1ex;}
+            .shiftlift {position: relative; lift: -1ex}
+            .shiftright {position: relative; right: -1ex }
+        </style> 
+    </head>
+    <body>
+        <p>The text at the end of this sentence <span class="super">is in subscript</span> </p>
+        <p>The text at the end of this sentence <span class="sub">is in subscript</sub> </p>
+        <p>The text at the end of this sentence <span class="shiftlift">is shifted lift</span></p>
+        <p>The text at the end of this sentence <span class="shiftright">is shifted right</span> </p>
+       
+    </body>
+</html>

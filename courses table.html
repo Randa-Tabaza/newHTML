@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                height: 1000px;
+            }
+            header {
+                display: flex;
+                background-color: gray;
+                color: white;
+                position: sticky;
+                top: 0;
+                width: 100%
+            }
+            header>a {
+                display: inline-block;
+                margin-top:-3em;
+                padding-top: 3em;
+                position: relative;
+                top: -2em;
+                border-bottom: 1em;
+            }
+            h3>a {
+                color:white;
+                text-decoration: none;
+                text-align: right;
+                position: relative;
+                right: 0;
+                margin-top: 2em;
+                padding-left:45em;
+               
+            }
+            .color {
+                color: white; 
+                text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00, 0 0 30px #ffea00; /* text shadow effect */
+                text-indent: 2em;
+                text-align: left 50px ;
+                text-transform: uppercase;
+            }
+            table > th {
+                font-weight:bolder ;
+            }
+            table , th, td {
+                text-align: center;
+                font-size: large;
+            }
+            footer {
+                
+                background-color: gray;
+                width: 99%;
+                height: 80px;
+                line-height: 70pv;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+             }
+            .copy {
+               text-align: center;
+               color: white;
+               font-size: 18px;
+             }
+             a:hover {
+                background-color: blueviolet;
+               
+             }
+             h3:hover {
+                background-color: blueviolet;
+             }
+             .author {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: black;
+                font-size: 18px;
+             }
+            
+             table {
+                width: 500px;
+                height: 500px;
+             }
+
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>Elearning system</h1>
+        <h3><a href="elearning.html">Return to the main page</a></h3>
+        </header>
+
+        <hr><img src="images/hr-img.png"></hr>
+        
+        <h1 class="color">Thank you for signing up</h1>
+        <p><h2>You can select your courses from the following list:</h2></p>
+
+        <table border="3" align="center">
+            <thead>
+                <tr>
+                    <th colspan="3">Courses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>course name</th><th>instructor</th><th>course link</th>
+                </tr>
+                <tr>
+                    <td>math</td><td>tasneem</td><td><a href="math.html">link</a> </td>
+                </tr>
+                <tr>
+                    <td>science</td><th rowspan="2">sara</th><td>link</td>
+                </tr>
+                <tr>
+                    <td>computer</td><td>link</td>
+                </tr>
+                <tr>
+                    <td>english</td><td>robin</td><td>link</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr><img src="images/hr-img.png"></hr>
+        <footer>
+            <span class="copy"><p>&copy;to author</p></span>
+            <div class="social" >
+                <span class="author"><a href="#"><i class="fa fa-facebook" style="color: black;"></i></a></span>
+                <span class="author"><a href="#"> <i class="fa fa-github"  style="color: black;"></i></a></span>
+                <span class="author"><a href="#"> <i class="fa fa-linkedin"  style="color: black";></i></a></span>
+                <span class="author"><a href="#"> <i class="fa fa-twitter"  style="color: black;"></i></a></span>
+            </div>  
+        </footer>
+        
+    </body>
+</html>

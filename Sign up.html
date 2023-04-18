@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                height: 1000px;
+            }
+            header {
+                display: flex;
+                background-color: gray;
+                color: white;
+                position: sticky;
+                top: 0;
+                width: 100%;
+            }
+            header>a {
+                display: inline-block;
+                margin-top:-3em;
+                padding-top: 3em;
+                position: relative;
+                top: -2em;
+                border-bottom: 1em;
+            }
+            h3>a {
+                color:white;
+                text-decoration: none;
+                text-align: right;
+                position: relative;
+                right: 0;
+                margin-top: 2em;
+                padding-left:45em;
+               
+             }
+            button:hover {
+                cursor: pointer;
+                padding: 10px;
+             }
+             #round2,fieldset{
+              
+                border:3px solid black;
+                padding: 5px 20px;
+                background: white;
+                width: 1000px;
+                border-radius: 0px;
+                margin-bottom: 20px;
+             }
+             footer {
+                background-color: gray;
+                width: 99%;
+                height: 80px;
+                line-height: 70pv;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+             }
+             .copy {
+                text-align: center;
+                color: black;
+                font-size: 18px;
+             }
+             a:hover {
+                background-color: blueviolet;
+               
+             }
+             h3:hover {
+                background-color: blueviolet;
+             }
+             .author {
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+               color: black;
+               font-size: 18px;
+             }
+
+             
+            
+
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>Elearning system</h1>
+        <h3><a href="elearning.html">Return to the main page</a> </h3>
+         
+        </header>
+        <hr><img src="images/hr-img.png"></hr>
+        
+        <fieldset>
+            <legend><h2>Sign up</h2></legend>
+        <div id="round2">
+        <forms action="">
+        
+           <p> <label for="">First name</label>
+            <input type="text" name="firstName" required></p>
+           <p> <label for="">Last name</label>
+            <input type="text" name="lastName" required></p>
+           
+                <label for="">Your phone number</label>
+                <input type="tel" id="phone number" size="25" maxlength="10" placeholder="123-456-7891" pattern="[789][0-9]{9}" required>
+            </p>
+            <p>
+                <label for="Email">Email</label>
+                <input type="email" id="email" placeholder="Example@gmail.com" required>
+            </p>
+            <p>
+                <label for="">Password</label>
+                <input type="password" required>
+            </p>
+            <p>
+                <ul><li>Gender</li></ul>
+                <p><label for="">Female</label>
+                <input type="radio" name="gender" value="female" required></p>
+                <p>
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" value="male" required>
+                </p>
+
+            </p>
+            <p>
+                <label for="rate">Your role</label>
+                <select name="rate" id="" required>
+                    <option value="student">student</option>
+                    <option value="teacher">teacher</option>
+                    <option value="graduated">graduated</option>  
+                    <option value="employed">employed</option>
+                    <option value="maneger">manager</option>       
+                </select>
+            </p>
+            <p>
+                <label for="">Linkedin profile</label>
+                <input type="email" placeholder="https://example.com" required>
+            </p>
+            <p>
+                <label for="">Enter the number of courses you are interested in:</label>
+                <input type="number" min="1" max="4" required>
+            </p>
+            <p>
+                <label for="">Your birthday</label>
+                <input type="date" value="birthday" required>
+            </p>
+            <p>
+                <button type="submit"><a href="courses table.html">submit</a></button>
+            </p>
+        </div>
+        </forms>
+    </fieldset>
+        <hr><img src="images/hr-img.png"></hr>
+       <footer>
+        <span class="copy"><p style="color: white;">&copy;to author</p></span>
+        <div class="social" >
+            <span class="author"><a href="#" style="color: black; align-items: center;"><i class="fa fa-facebook"></i></a></span>
+            <span class="author"><a href="#" style="color: black; align-items: center;"> <i class="fa fa-github"></i></a></span>
+            <span class="author"><a href="#" style="color: black; align-items: center;"> <i class="fa fa-linkedin"></i></a></span>
+            <span class="author"><a href="#" style="color: black; align-items: center;"> <i class="fa fa-twitter"></i></a></span>
+        </div>  
+    </footer>
+        
+    </body>
+</html>
