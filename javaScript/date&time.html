@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name;
+        var now = new Date();
+        var hour  = now.getHours();
+        var res = "";
+        var color1 = "";
+        var color2 = "";
+        name = prompt("Enter your name");
+        color1 = prompt("Enter your first favorite color");
+        color2 = prompt("Enter your second favorite color");
+        if(hour < 12){
+            res = "Good Morning!";
+        }
+        else if(hour >= 12 && hour < 18){
+            res = "Good afternoon!";
+        }
+        else if(hour > 18){
+            res = "Good Evening!";
+        }
+        res = res + ", <span style='color:"+color1+"'>"+name+"</span>,Welcome to Java programming!";
+        document.writeln("<h2 style='background-color:"+color2+"'>"+res+"</h2>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

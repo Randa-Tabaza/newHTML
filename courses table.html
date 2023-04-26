@@ -83,6 +83,7 @@
              }
 
         </style>
+        
     </head>
     <body>
         <header>
@@ -130,6 +131,16 @@
                 <span class="author"><a href="#"> <i class="fa fa-twitter"  style="color: black;"></i></a></span>
             </div>  
         </footer>
-        
+        <script>
+            let res = confirm("Wuold you like to rate our web page?");
+            if(res){
+                let rating  = parseInt(prompt("How many stars will you give us?"));
+                for(let i=1 ; i<=rating ;i++){
+                    document.write("<img src='images/star.png' height='50' width='50' >");
+
+                }
+            }
+
+        </script>
     </body>
 </html>

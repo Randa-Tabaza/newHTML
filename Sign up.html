@@ -74,11 +74,42 @@
                color: black;
                font-size: 18px;
              }
-
-             
-            
-
         </style>
+        <script>
+            let score = 0;
+            var res = confirm("Would you like to take a short and fun quiz?")
+            if(res ==false){
+                alert("Ok then, have fun exploring the web :3 ");
+            }
+
+            else if(res = true){
+                var q1 = parseInt(prompt(" Enter a number between 1 and 100 that is divisible by 3,5,10 and 15."));
+                if(q1 %5==0){
+                   score++;
+                }
+                var q2 = parseInt(prompt(" if: (3 * x = 6 ), what's the value of (x)?"));
+                if(q2 === 2){
+                  score++;
+                }
+                var q3 = parseInt(prompt(" How many plantes is in the Solar System?"));
+                if(q3 === 8){
+                  score++; 
+                }
+                var q4 = prompt(" What is the capital of Japan?");
+                if(q4=="tokyo" || q4=="Tokyo"){
+                  score++; 
+                }
+                var q5 = prompt(" What element does (O) represent on the periodic table?");
+                if(q5=="oxygen" || q5=="Oxygen"){
+                  score++;   
+                }
+                alert("Your score is "+score+" out of 5!")
+                
+
+            }
+        
+            
+        </script>
     </head>
     <body>
         <header>
