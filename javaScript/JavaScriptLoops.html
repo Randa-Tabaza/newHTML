@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 900px;
+        }
+        h1 {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding-top: 20pt;
+            padding-bottom: 20pt;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            align-items: center;
+            text-align: center;
+        }
+        .copy {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+         }
+         img {
+            padding-right: 100pt;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+         }
+
+    </style>
+    <script>
+        let name = prompt("Enter your name please:");
+        alert("Welcome to my website, "+name+"!");
+        function validateEmail() {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
+        var passwordRegex = /^(?=.*[A-Z])(?=.*\d).{6,12}$/;
+        var validEmail = false;
+        var validPassword = false;
+        while (!validEmail) {
+            var email = prompt("Enter your email:");
+
+            if (emailRegex.test(email)) {
+              validEmail = true;
+              alert("Email is valid!");
+            }    
+             else {
+              alert("Invalid email address!");
+            }
+        }
+        while (!validPassword){
+            var password = prompt("Enter your password:");
+
+            if (passwordRegex.test(password)){
+            validPassword = true;
+            alert("Password is valid!");  
+            }
+            else if(validPassword = false) {
+                alert("invalid password!"/n+
+                "Password should be 6-12 characters long and contain at least 1 capital letter and 1 number.");
+            }
+        }
+        document.getElementById("emailInput").value = email;
+        document.getElementById("passwordInput").value = password; 
+    }
+    
+    </script>
+</head>
+<body>
+    <h1>Email and password validation:</h1>
+    <button onclick="validateEmail()"> Email:</button>
+    <form action="">
+    <p><label for="emailInput">Email:</label>
+    <input type="email" id="emailInput" ></p>
+  
+    <p><label for="passwordInput">Password:</label>
+    <input type="password" id="passwordInput" ></p>
+    </form>
+
+    <h1>Gallery</h1>
+    <script>
+        let numOfImages = parseInt(prompt("What is the number of images you would like to add?"));
+    for (let i=1 ; i<=numOfImages ;i++){
+        let gallery = prompt("Enter the source of the "+i+" image you want to add:");
+        document.write(`<img src='${gallery}'></img>` );
+    }
+
+    </script>
+
+    <footer>
+        <span class="copy"> &copy;to author</span>       
+    </footer>
+
+</body>
+</html>
