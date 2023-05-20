@@ -19,8 +19,8 @@ function start() {
 function rollDice() {
     var dice1Value = Math.floor(Math.random() * 6) + 1;
     var dice2Value = Math.floor(Math.random() * 6) + 1;
-    dice1.setAttribute("src", "Dice images/die" + dice1Value + ".png");
-    dice2.setAttribute("src", "Dice images/die" + dice2Value + ".png");
+    dice1.setAttribute(`src`, `Dice images/die` + dice1Value + `.png`);
+    dice2.setAttribute(`src`, `Dice images/die` + dice2Value + `.png`);
     targetNumber = dice1Value + dice2Value; 
 }
 
