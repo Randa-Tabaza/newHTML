@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var mark = parseInt(prompt("Enter the marks, type -1 to stop:"));
+        var sum=0;
+        var pass=0;
+        var fail=0;
+        var average;
+        var median;
+        var mode;
+        while(mark != -1){
+            sum=sum+mark;
+            if(mark>=50){
+                pass++;
+            }
+            else
+                fail++;
+            marks[count]=mark;    
+            count++;
+            mark = parseInt(prompt("Enter mark"+(count+1)));
+        }
+        average = sum/count;
+        document.writeln(`<h3>Pass: ${pass}</h3>`);
+        document.writeln(`<h3>Fail: ${fail}</h3>`);
+        document.writeln(`<h3>Average: ${average}</h3>`);
+        document.writeln("<br>"+marks.join(", "));
+        marks.sort(compareInt);
+        function compareInt(v1,v2){
+            return parseInt(v1)-parseInt(v2);
+        }
+        var median;
+        var middle = Math.floor(marksArray.length / 2);
+        if (marksArray.length % 2 === 0) {
+            median = (marksArray[middle - 1] + marksArray[middle]) / 2;
+        }  
+        else {
+            median = marksArray[middle];
+        }
+
+    
+        var mode = [];
+        var maxCount = 0;
+        for (var i = 0; i < marksArray.length; i++) {
+        var count = 0;
+        for (var j = 0; j < marksArray.length; j++) {
+        if (marksArray[i] === marksArray[j]) {
+          count++;
+        }
+        }
+        if (count > maxCount) {
+        mode = [marksArray[i]];
+        maxCount = count;
+        } 
+        else if (count === maxCount) {
+        mode.push(marksArray[i]);
+        }
+        }
+
+    
+    document.write("Median: " + median + "<br>");
+    document.write("Mode: " + mode.join(", "));
+        
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

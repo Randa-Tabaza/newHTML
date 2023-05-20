@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game</title>
+    <style>
+        body{
+            height: 800px;
+            background-color: black;
+            color: white;
+        }
+         #round2,fieldset{
+              
+              border:3px solid white;
+              padding: 5px 20px;
+              background: black;
+              width: 1000px;
+              border-radius: 0px;
+              margin-bottom: 20px;
+           }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h2 style="font-family: 'Courier New', Courier, monospace;">User Info</h2></legend>
+    <div id="round2">
+    <form action="" id="userInfoForm">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Name" id="name" required>
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Email" id="email" required>
+        <button type="submit">Submit</button>   
+    </form>
+    </div>
+    </fieldset>
+    <h2 style="padding: left 50px; ;">Dice Roll (Guess the sum of the two dices with <span id="attemptsNumber"></span> attempts): </h2>
+    <label for="number">Enter your guess:  </label>
+    <input type="number" id="guessInput" min="1" max="12" required>
+    <button id="guessBtn" disabled>Go !</button>
+    <ol>
+        <li><img id="die1" ></li>
+        <li><img id="die2" ></li>
+    </ol>
+    <h3 id="displayResult"></h3>
+    <script src="MiniGame.js"></script>
+  
+</body>
+</html>
