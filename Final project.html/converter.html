@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="header&footer.css">
+
+    <style>
+        
+        #result {
+            font-weight: bold;
+        }
+        main {
+            flex-direction: column;
+            padding: 10px;
+        }
+        .converter-container {
+            border: 4px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .converter-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        fieldset{
+              
+              border:3px solid black;
+              padding: 5px 20px;
+              background: white;
+              width: 1000px;
+              border-radius: 0px;
+              margin-bottom: 20px;
+        }
+        .value-result-container {
+            margin-top: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .value-result-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>My Website</h1>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Links</a>
+                <div class="dropdown-content">
+                    <a href="personal Info.html">Personal Info</a>
+                    <a href="social media.html">My Social Media</a>
+                    <a href="converter.html">Converter</a>
+                    <a href="Roll Dice.html">Dice Game</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <fieldset>
+            <legend><h1>Unit Converter</h1></legend>
+        <div class="converter-container">
+            <h1>Temperature Converter</h1>
+            <label>
+                <input type="radio" name="conversion" value="fahrenheitToCelsius" checked><br>
+                Fahrenheit to Celsius
+            </label>
+            <br>
+            <h1>Distance Converter</h1>
+            <label>
+                <input type="radio" name="conversion" value="kilometersToMiles"><br>
+                Kilometers to Miles
+            </label>
+            <br>
+            <h1>Height Converter</h1>
+            <label>
+                <input type="radio" name="conversion" value="metersToFeet"><br>
+                Meters to Feet
+            </label>
+            <br><br>
+        </div>
+    </fieldset>
+            <fieldset>
+                <legend><h3>The Result</h3></legend>
+            <div class="value-result-container">
+                <label for="valueToConvert">Value to Convert:</label>
+                <input type="text" id="valueToConvert">
+                <br>
+                <button onclick="convert()">Convert</button>
+                <br>
+                <label for="result">Result:</label>
+                <span id="result"></span>
+            </div>
+        </fieldset>
+    </main>
+    <footer class="footer">
+        <div class="copy">&copy; 2023 all rights to author.</div>
+    </footer>
+
+    <script src="converter.js"></script>
+</body>
+</html>

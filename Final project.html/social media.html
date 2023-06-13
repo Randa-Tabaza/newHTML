@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="header&footer.css">
+    <style>
+        h1 {
+            color: black;
+            text-shadow: 2px 2px 4px #333;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .link-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+        .link-container a:hover {
+            background-color: black;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+        main{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>My Website</h1><br>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Links</a>
+                <div class="dropdown-content">
+                    <a href="personal Info.html">Personal Info</a>
+                    <a href="social media.html">My Social Media</a>
+                    <a href="converter.html">Converter</a>
+                    <a href="Roll Dice.html">Dice Game</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h1>My Social Media</h1>
+        <div class="link-container">
+            <a href="https://github.com/Randa-Tabaza/newHTML">My Github</a>
+            <a href="mailto:lendaranda@gmail.com">My Email</a>
+            <a href="https://instagram.com/randa_tabaza_?igshid=NGExMmI2YTkyZg==">My Instagram</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="copy">&copy; 2023 all rights to author.</div>
+    </footer>
+</body>
+</html>
