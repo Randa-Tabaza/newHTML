@@ -11,8 +11,8 @@ function rollDice() {
   var dice2Value = Math.floor(Math.random() * 6) + 1;
   var pic1 = document.getElementById("dice1");
   var pic2 = document.getElementById("dice2");
-  pic1.setAttribute(`src`, `Dice images/die`+`${dice1Value}`+`.png`);
-  pic2.setAttribute(`src`, `Dice images/die`+`${dice2Value}`+`.png`);
+  pic1.setAttribute("src", "Dice images/die"+`${dice1Value}`+".png");
+  pic2.setAttribute("src", "Dice images/die"+`${dice2Value}`+".png");
   return dice1Value + dice2Value;
 }
 
