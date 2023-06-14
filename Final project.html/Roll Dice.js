@@ -9,10 +9,10 @@ function start() {
 function rollDice() {
   var dice1Value = Math.floor(Math.random() * 6) + 1;
   var dice2Value = Math.floor(Math.random() * 6) + 1;
-  var dice1 = document.getElementById("dice1");
-  var dice2 = document.getElementById("dice2");
-  dice1.setAttribute("src", "Dice images/die" + dice1Value + ".png");
-  dice2.setAttribute("src", `Dice images/die` + dice2Value + ".png");
+  var pic1 = document.getElementById("dice1");
+  var pic2 = document.getElementById("dice2");
+  pic1.setAttribute(`src`, `Dice images/die`+`${dice1Value}`+`.png`);
+  pic2.setAttribute(`src`, `Dice images/die`+`${dice2Value}`+`.png`);
   return dice1Value + dice2Value;
 }
 
